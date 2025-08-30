@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+ 
+  <div class="navbar">
+    <div class="welcome">Welcome, {{ username }} </div>
+    <a href="{{ url_for('logout') }}" class="logout-btn">Logout</a>
+  </div>
+
+
+<div class="container">
+  <div class="card">
+    <h2>Find Events</h2>
+
+  
+    <form id="search-form" class="form-input">
+      <input type="text" name="city"  placeholder="City (e.g. Montreal)">
+      <input type="text" name="state" placeholder="Province/State code (e.g. QC)">
+      <select name="type">
+        <option value="">Type</option>
+        <option value="music">Music</option>
+        <option value="sports">Sports</option>
+        <option value="arts">Arts</option>
+        <option value="theatre">Theatre</option>
+      </select>
+      <button type="submit">Search</button>
+    </form>
+
+  
+    <div id="results"></div>
+    <div id="pagination"></div>
+  </div>
+</div>
+
+
+<script src="{{ url_for('static', filename='load.js') }}"></script>
+
+</body>
+</html>

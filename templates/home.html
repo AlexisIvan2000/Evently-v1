@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Evently – Home</title>
+
+ <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+  <header class="page">
+    
+    <a class="cta-top" href="{{url_for('login')}}">Get Started</a>
+
+    <div class="hero">
+      <div class="left">
+        <div class="brand">
+          <span class="brand-name">Evently</span>
+        </div>
+
+        <h1 class="headline">
+          Discover<br>
+          Exciting<br>
+          Events
+        </h1>
+
+        <p class="sub">
+          Find and explore upcoming<br>
+          events near you with ease.
+        </p>
+
+        <div class="chips">
+          <a class="chip chip-orange" href="javascript:void(0)"> Music</a>
+          <a class="chip chip-blue"   href="javascript:void(0)"> Sports</a>
+          <a class="chip chip-navy"   href="javascript:void(0)"> Film</a>
+          <a class="chip chip-purple" href="javascript:void(0)"> Art & Theatre</a>
+          <a class="chip chip-red"   href="javascript:void(0)"> Miscellaneous</a>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="image-wrap">
+         <img src="{{ url_for('static', filename='font.png') }}" alt="Concert crowd">
+
+        </div>
+      </div>
+    </div>
+  </header>
+</body>
+</html>
