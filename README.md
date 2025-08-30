@@ -21,4 +21,6 @@ A welcome email is sent upon registration (can be disabled or replaced with Mail
 ## Demo Video
 [Watch the demo on Google Drive](https://drive.google.com/file/d/1Ah82oJfM-46ck9833KNrp10EnEgD_44N/view?usp=sharing)
 
+Here is a preview of Evently
+[receiving mail]("docs/demo.png")
 
